@@ -81,15 +81,8 @@ a {
     }
 
     p {
-      font-size: 18px;
-      color: #a8a8b3;
-      margin-top: 4px;
+      font-size: ;
     }
-  }
-
-  svg {
-    margin-left: auto;
-    color: #cbcbd6;
   }
 }
 `;

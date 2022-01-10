@@ -89,7 +89,7 @@ a {
 
   svg {
     margin-left: auto;
-    color: #cbcbd6;
+    color
   }
 }
 `;

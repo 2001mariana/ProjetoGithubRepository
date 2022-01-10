@@ -76,20 +76,8 @@ a {
     flex: 1;
 
     strong {
-      font-size: 20px;
-      color: #3d3d4d;
+      font-size: ;
     }
-
-    p {
-      font-size: 18px;
-      color: #a8a8b3;
-      margin-top: 4px;
-    }
-  }
-
-  svg {
-    margin-left: auto;
-    color: #cbcbd6;
   }
 }
 `;
