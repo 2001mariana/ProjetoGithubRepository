@@ -1,0 +1,56 @@
+import React from 'react';
+import { Link, useRouteMatch } from 'react-router-dom';
+import { Header, Issues, RepoInfo } from './styles';
+import logo from '../../assets/logo.svg'
+import { FiChevronLeft } from 'react-icons/fi'
+
+interface RepositoryParams {
+  repository: string;
+}
+
+export const Repo: React.FC = () => {
+  const { params } = useRouteMatch<RepositoryParams>();
+
+  return (
+    <>
+      <Header>
+        <img src={logo} alt='GitCollection' />
+        <Link to="/">
+          <FiChevronLeft />
+          Voltar
+        </Link>
+      </Header>
+      <RepoInfo>
+        <header>
+          <img src="" alt="img do repositório" />
+          <div>
+            <strong>Nome do repositório</strong>
+            <p>Descrição do repositório</p>
+          </div>
+        </header>
+        <ul>
+          <li>
+            <strong>número</strong>
+            <span>Stars</span>
+          </li>
+          <li>
+            <strong>número</strong>
+            <span>Forks</span>
+          </li>
+          <li>
+            <strong>número</strong>
+            <span>Issues Abertas</span>
+          </li>
+        </ul>
+      </RepoInfo>
+      <Issues>
+        <Link to="/">
+          <div>
+            <strong>Título da issue</strong>
+            <p>Issues</p>
+          </div>
+        </Link>
+      </Issues>
+    </>
+  )
+}
