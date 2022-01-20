@@ -89,4 +89,4 @@ const Repo: React.FC = () => {
   )
 }
 
-export default Repo
+export d

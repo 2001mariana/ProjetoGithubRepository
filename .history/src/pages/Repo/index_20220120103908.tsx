@@ -88,5 +88,3 @@ const Repo: React.FC = () => {
     </>
   )
 }
-
-export default Repo

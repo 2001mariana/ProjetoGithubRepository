@@ -10,7 +10,7 @@ const Repo = lazy(() => import(/* webpackChunkName: "Repo" */ '../pages/Repo'))
 
 export const Routes: React.FC = () => {
   return (
-    <Suspense fallback={'loading...'}>
+    <Suspense>
     <Switch>
       <Route component={Dashboard} path="/" exact/>
       <Route component={Repo} path="/repositories/:repository+"/>
