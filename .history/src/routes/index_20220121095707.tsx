@@ -2,10 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 const Dashboard = lazy(
-  () =>
-    import(
-      /* webpackChunkName: "Dashboard" */ /* webpackPrefetch: true */ '../pages/Dashboard'
-    ),
+  () => import(/* webpackChunkName: "Dashboard" */ '../pages/Dashboard'),
 );
 const Repo = lazy(
   () =>

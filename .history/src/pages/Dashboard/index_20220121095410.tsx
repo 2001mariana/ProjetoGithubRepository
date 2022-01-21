@@ -1,4 +1,3 @@
-// eslint-disable-next-line prettier/prettier
 import React, { ChangeEvent, FormEvent, useEffect, useRef, useState } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';

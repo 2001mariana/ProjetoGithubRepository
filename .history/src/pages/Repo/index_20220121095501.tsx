@@ -47,6 +47,7 @@ const Repo: React.FC = () => {
 
   return (
     <>
+      <h1>Repo: {params.repository}</h1>
       <Header>
         <img src={logo} alt="GitCollection" />
         <Link to="/">

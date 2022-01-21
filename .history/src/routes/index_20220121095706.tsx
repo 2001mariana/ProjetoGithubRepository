@@ -2,17 +2,9 @@ import React, { lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 const Dashboard = lazy(
-  () =>
-    import(
-      /* webpackChunkName: "Dashboard" */ /* webpackPrefetch: true */ '../pages/Dashboard'
-    ),
+  () => import(/* webpackChunkName: "Dashboard" */ '../pages/Dashboard'),
 );
-const Repo = lazy(
-  () =>
-    import(
-      /* webpackChunkName: "Repo" */ /* webpackPrefetch: true */ '../pages/Repo'
-    ),
-);
+const Repo = lazy(() => import(/* webpackChunkName: "Repo" */ /* webpackPrefetch: true */'../pages/Repo'));
 
 export const Routes: React.FC = () => {
   return (
